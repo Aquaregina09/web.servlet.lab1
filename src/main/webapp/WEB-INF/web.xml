@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="jee.web.blueprint" version="3.1">
+	<display-name>webshoppe-commerce</display-name>
+
+    <servlet>
+        <servlet-name>ItemCatalogServlet</servlet-name>
+        <servlet-class>com.webshoppe.ecommerce.servlet.ItemCatalogServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ItemCatalogServlet</servlet-name>
+        <url-pattern>/item-catalog</url-pattern>
+    </servlet-mapping>
+    
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
